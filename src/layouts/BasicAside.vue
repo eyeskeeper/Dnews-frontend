@@ -6,8 +6,9 @@
       @open="handleOpen"
       @close="handleClose"
       :default-openeds="openedMenus"
+      :router="true"
     >
-      <el-menu-item index="1">
+      <el-menu-item>
         <template #title>
           <el-icon>
             <location />
@@ -31,7 +32,7 @@
         </el-icon>
         <span>浏览分析</span>
       </el-menu-item>
-      <el-menu-item index="4">
+      <el-menu-item index="/uploadPage">
         <el-icon>
           <ChatDotSquare />
         </el-icon>

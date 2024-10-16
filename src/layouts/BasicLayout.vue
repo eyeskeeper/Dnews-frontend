@@ -11,7 +11,7 @@
         <el-container>
           <el-main>
             <!--            todo:改为router-view形式-->
-            <MainNews />
+            <router-view />
           </el-main>
           <el-footer>
             <a

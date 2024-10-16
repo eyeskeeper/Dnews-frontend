@@ -1,18 +1,26 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import HomeView from "../views/HomeView.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
-    name: "home",
-    component: HomeView,
-    // component: () => import("@/views/LoginPage.vue"),
-    // component: () => import("@/views/RegistryPage.vue"),
+    name: "basicLayout",
+    component: () => import("@/layouts/BasicLayout.vue"),
+    redirect: "/mainNew",
     children: [
+      {
+        path: "/mainNew",
+        name: "mainNew",
+        component: () => import("@/views/main/MainNews.vue"),
+      },
       {
         path: "/login",
         name: "login",
         component: () => import("@/views/LoginPage.vue"),
+      },
+      {
+        path: "/uploadPage",
+        name: "uploadPage",
+        component: () => import("@/views/main/UploadPage.vue"),
       },
     ],
   },
