@@ -1,6 +1,7 @@
 <template>
   <UploadForm />
   <div id="UploadPage">
+    <el-button @click="printHtml" type="primary"> upload</el-button>
     <div style="border: 1px solid #ccc">
       <Toolbar
         style="border-bottom: 1px solid #ccc"
@@ -46,7 +47,9 @@ const valueHtml = ref("<p>hello</p>");
 onMounted(() => {
   valueHtml.value = "<p>模拟 Ajax 异步设置内容</p>";
 });
-
+const printHtml = () => {
+  console.log(valueHtml.value);
+};
 const toolbarConfig = {};
 const editorConfig = { placeholder: "请输入内容..." };
 

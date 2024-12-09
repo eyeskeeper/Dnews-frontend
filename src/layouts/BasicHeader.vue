@@ -25,8 +25,8 @@ const LogoSrc = "@/assets/logo.svg";
       </el-menu-item>
       <el-menu-item index="1">最近新闻</el-menu-item>
       <el-menu-item index="2">高级搜索</el-menu-item>
-      <el-menu-item index="3">数据解析</el-menu-item>
-      <el-menu-item index="4">世界树</el-menu-item>
+      <el-menu-item index="3">网站自检</el-menu-item>
+      <el-menu-item index="4">事件树</el-menu-item>
       <el-menu-item index="5">百家争鸣</el-menu-item>
       <div id="setting">
         <img style="width: 20px" src="@/assets/setting.svg" alt="setting" />

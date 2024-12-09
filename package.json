@@ -12,6 +12,7 @@
     "@wangeditor/editor": "^5.1.23",
     "@wangeditor/editor-for-vue": "^5.1.12",
     "core-js": "^3.8.3",
+    "dompurify": "^3.2.0",
     "element-plus": "^2.8.4",
     "tsparticles": "^3.5.0",
     "vue": "^3.2.13",

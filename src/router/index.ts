@@ -5,12 +5,17 @@ const routes: Array<RouteRecordRaw> = [
     path: "/",
     name: "basicLayout",
     component: () => import("@/layouts/BasicLayout.vue"),
-    redirect: "/mainNew",
+    redirect: "/singleNew",
     children: [
       {
         path: "/mainNew",
         name: "mainNew",
         component: () => import("@/views/main/MainNews.vue"),
+      },
+      {
+        path: "/singleNew",
+        name: "singleNew",
+        component: () => import("@/views/main/SingleNew.vue"),
       },
       {
         path: "/login",
